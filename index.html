@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="./styles.css">
     <!-- tailwind link-->
          <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+<!-- font awsome  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
          
 </head>
 <body class="manrope-font">
@@ -25,11 +26,22 @@
             ">It's good 
 tea time at The Tea House</h3>
             <p class="banner-details mb-[30px] text-[#777777] font-medium sm:test-[1.125rem] text-[1.5rem] ">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <!-- bg-[linear-gradient(to_right,#FF0000,#FF8938)] -->
+             <!-- bg-gradient-to-r from-[#FF8938] to-[#FF0000] -->
             <button class="banner-btn text-[1.25rem]
-            text-[#FFFFFF] bg-[linear-gradient(to_right,#FF0000,#FF8938)] px-[20px] py-[18px] rounded-[10px]">Explore More</button>
-           </div>
-          <div>
-            <img src="./images/banner.png" alt="">
+            text-[#FFFFFF] bg-gradient-to-r from-[#FF8938] to-[#FF0000]   px-[20px] py-[18px] rounded-[10px]"><span>Explore More</span><span ><i class="fa-solid fa-arrow-right -rotate-45"></i></span></button>
+           </div>       
+           <!-- relative top-[200px] -->
+          <div class="banner-img ">
+               <img class="relative top-[120px] right-[50px]" src="./images/banner.png" alt="">
+               <!-- ratings -->
+               <div class="ratings rounded-[10px] shadow-md bg-[#FFFFFF] items-center flex w-[255px] h-[100px] absolute">
+                <span class="text-[#FFDC64] text-4xl "><i class="fa-solid fa-star"></i></span>
+             <div class="rating-content ml-[10px]">
+                   <p class=" rate font-extrabold text-[1.875rem] text-[#1C1C1C] ">5.00</p>
+                <p class="trust text-[#777777] text-[1rem] font-semibold">Trust Pilot Ratings</p>
+             </div>
+               </div>
           </div> 
         
       </section>
@@ -77,7 +89,25 @@ tea time at The Tea House</h3>
 <!-- bg-[linear-gradient(to_right,#FF0000,#FF8938)] -->
 <!-- greatTea section -->
 
-<section class="greatTea my-[150px] grid sm:grid-cols-2 grid-cols-1">
+<section class="greatTea max-w-[1140px] m-auto  grid sm:grid-cols-2 grid-cols-1  p-5">
+
+<div class="cards grid grid-cols-2 grid-rows-3   w-1/2   h-full gap-4 ">
+
+<div class="div1 opacity-10 bg-gradient-to-r from-[#ff0000] to-[#ff8938] gap-4   "></div>
+
+<div class="div2  bg-[#e6a6231a] row-span-2 flex justify-center items-center "> 
+ <img    class="  "  src="./images/fresh-1.png" alt="">
+</div>
+
+<div class="div3  bg-[#e6a6231a]  row-span-2 flex justify-center items-center">
+     <img    src="./images/fresh-2.png" alt="">
+</div>
+
+<div class="div4 bg-gradient-to-r from-[#d9d9d9] "></div>
+ 
+</div>
+
+<!-- 
      <div class="tea-imgs grid grid-cols-2">
         <div class="shade1 bg-[liner-gradient(to_right,#FF0000,#FF8938)]"></div>
 
@@ -85,7 +115,14 @@ tea time at The Tea House</h3>
   
         <img  class="img2 py-[30px] px-[45px] rounded-[10px]   bg-[#577639]/10" src="./images/fresh-2.png" alt="">
          <div class="shade2 bg-[liner-gradient(to_right, #D9D9D9, #FFFFFF)]"></div>
-     </div>
+     </div> -->
+
+
+
+
+
+
+
 
       <div class="tea-content px-[30px] p-[5px] max-w-[500px] ">
         <h4 class="tea-title font-extrabold text-[3rem] text-[#1C1C1C] ">Great Tea, Freshly Presented</h4> 
@@ -107,10 +144,10 @@ tea time at The Tea House</h3>
 <!-- bg-[linear-gradient(to_right,#FF0000,#FF8938)] -->
 <!-- clients section -->
 
- <section class="client max-w-[1140px] m-auto bg-[linear-gradient(to_left,#FF0000,#FF8938)]">
+ <section class="client my-[130px] max-w-[1140px] m-auto bg-[linear-gradient(to_left,#FF0000,#FF8938)]">
               
-<div class="clients-container flex">
-           <div class="clients-content">
+<div class="clients-container flex sm:flex-row flex-col justify-center items-center">
+           <div class="clients-content  px-[80px]  py-[150px]">
             <h5 class="clients-title text-[3rem] font-extrabold text-[#F4F4F4] ">Meet Our Super Clients</h5>
             <p class="clients-details font-medium  text-[1rem] my-[25px] text-[#F4F4F4] ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
             <button class="client-btn text-[1.25rem] font-bold
@@ -118,15 +155,23 @@ tea time at The Tea House</h3>
               </div>
 
             <!-- </div>    text-[linear-gradient(to_right,#FF0000,#FF8938)] -->
-          <div class="client-img-card 
-       ">     <img src="./images/client.png" alt="">
+       
+            <div class="client-img-card   p-[10px] relative  bg-[#FFFFFF]
+       ">     
             <p class="info text-[1rem] my-[25px] text-[#777777] font-regular">
                 We are providing the best and suitable home insurance services for the people who are interested to treatment
             </p>
+
             <h5 class="name text-[#1C1C1C]  font-bold text-[1rem] ">Ilham Yuda</h5>
             <p class="profession font-medium text-[1rem] t]">Businessman</p>
             <img src="./images/circles.png" alt="">
+          <div class="client-img absolute -left-5 -top-8">
+        <img class="w-[60px] h-[60px] rounded-full"  src="./images/client.png" alt="">
+       </div> 
          </div>    
+
+
+
 
  </div>
   
@@ -143,7 +188,7 @@ tea time at The Tea House</h3>
 
  <!-- events card container -->
        
- <div class="events-card-container   grid  sm:grid-cols-3 grid-cols-1 justify-evenly">
+ <div class="events-card-container   grid  sm:grid-cols-3  grid-cols-1 justify-evenly">
     <!-- card 1 -->
         <div class="card1 border border-[#D2D2D2] rounded-[10px] m-auto max-w-[350px] p-[25px]">
             <img class="card-img rounded-[10px] " src="./images/news-1.png" alt="">
@@ -186,12 +231,69 @@ tea time at The Tea House</h3>
 
     </main>
  <!-- footer section -->
-    <footer>
     
+    <footer class="footer py-[130px] bg-gradient-to-r from-red-500/10 to-[#FF8938]/10">
+         <div class="footer-header  flex  justify-around items-center">
+            <img src="./images/cup.png" alt="">
+            <div class="flex items-center">
+                <p class="font-medium text-[1.25rem] text-[#494949] sm:visible hidden
+                ">Ready to get strated?</p>
+                <button  class="footer-btn mx-[40px] text-[#FFFFFF] bg-[linear-gradient(to_right,#FF0000,#FF8938)] py-[15px] px-[20px] rounded-[8px] ">Get Started</button>
+            </div>
+         </div>
+      
+         <div class="footer-main max-w-[1100px] m-auto  py-[100px] sm:px-[10px] px-[20px] grid sm:grid-cols-4 grid-cols-1 ">
+            <div class="part1 ">
+               <ul>
+                <li class="title font-semibold text-[1.25rem] text-[#1C1C1C] py-[20px]">Quick Links</li>
+                <li class="title text-[1rem] text-[#494949] my-[18px] ">Home</li>
+                <li class="title text-[1rem] text-[#494949] my-[18px]">About Us</li>
+                <li class="title text-[1rem] text-[#494949] my-[18px] ">Insurance</li>
+                <li class="title text-[1rem] text-[#494949] my-[18px]">Privacy Policy</li>
+                <li class="title font-semibold 
+                text-[1.25rem] text-[#1C1C1C] "></li>
+               </ul>
+            </div>
 
+              <div class="part2">
+               <ul>
+                <li class="title font-semibold text-[1.25rem] text-[#1C1C1C] py-[20px]">Our Service</li>
+                <li class="title text-[1rem] text-[#494949] my-[18px] ">Life Insurance</li>
+                <li class="title text-[1rem] text-[#494949] my-[18px] ">Car Insurance</li>
+                <li class="title text-[1rem] text-[#494949] my-[18px]">Health Insurance</li>
+                <li class="title text-[1rem] text-[#494949] my-[18px] ">House Insurance</li>
+                <li class="title text-[1rem] text-[#494949] my-[18px] "></li>
+               </ul>
+            </div>
+            
+
+             <div class="part3">
+               <ul>
+                <li class="title font-semibold text-[1.25rem] text-[#1C1C1C] py-[20px]">Help</li>
+                <li class="title text-[1rem] text-[#494949] my-[18px]">FAQs</li>
+                <li class="title text-[1rem] text-[#494949] my-[18px]">Contact Us</li>
+               
+               </ul>
+        
+
+            </div>
+              
+            <div class="part4">
+                <h5 class="title text-[1.5rem] font-semibold test-[#1C1C1C] pb-[30px]">Subscribe to our newsletter</h5>
+                <input class="input  underline" type="email" name="" id="" placeholder="Email address">
+                <div class="logos">
+
+                </div>
+            </div>
+
+         </div>
+       <div class="allrights">
+        <p class=" rights font-medium text-[1rem] text-[#494949] text-center">© 2027 UIDesign.to - All rights reserved.</p>
+       </div>
     </footer>
+ 
 
-
+    
 
 </body>
 </html>
